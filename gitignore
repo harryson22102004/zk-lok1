@@ -1,0 +1,37 @@
+# deps
+node_modules/
+.pnp
+.pnp.js
+
+# next
+.next/
+out/
+build/
+next-env.d.ts
+
+# env
+.env
+.env*.local
+
+# circuit artefacts — never commit a zkey or a ptau, they are 24 MB+ and
+# regenerable from the ceremony transcript
+*.zkey
+*.ptau
+*.r1cs
+*.wtns
+circuits/build/
+
+# firmware build output (sibling repo, symlinked during bench work)
+fw/build/
+fw/sdkconfig.old
+*.bin
+*.elf
+*.map
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-error.log*
+.vercel
+*.tsbuildinfo
